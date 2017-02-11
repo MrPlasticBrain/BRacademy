@@ -1,0 +1,208 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 87889; /* Sit on top */
+    padding-top: 15px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 103%; /* Full width */
+    height: 98%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+        border-radius: 10px 10px 10px 10px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background: linear-gradient(#D91868,#D91877);
+    color: white;
+    border-radius: 9px 9px 1px 1px;
+}
+
+.modal-body {padding: 2px 16px;}
+.modal-header h2{
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+    color: #00aeef;
+}
+.modal-footer {
+    padding: 2px 16px;
+       background-color: #0093EF;
+    color: white;
+    border-radius: 1px 1px 8px 8px;
+}
+
+/*CONTACT*/
+ #myModal #contact{
+    padding:10px 0 10px;
+  }
+
+   #myModal .contact-text{
+    margin:45px auto;
+  }
+
+ #myModal   .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+ #myModal   .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  #myModal  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+ #myModal   .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+ #myModal   .form{
+    width: 94%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+ #myModal   .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+ #myModal   .textarea{
+    height: 60px;
+/*
+    max-height: 200px;
+    max-width: 100%;
+*/
+  }
+  
+/* Generic Button Styles */
+
+ #myModal   .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+ #myModal   .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+ #myModal   .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+ #myModal   .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  #myModal  .form-btn:active{
+    opacity: 0.9;
+  }
+ #myModal  center{
+  margin-top:330px;
+}
+ #myModal input {
+    position: relative;
+    z-index: 9999;
+}
+/*CONTACT*/
