@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q's</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ihover.css">
+    <link rel="stylesheet" href="css/boxmodal.css">
+    <!--  Load External Script and Css  -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+    <!--  Load External Script and Css  -->
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/jquery-migrate-1.1.1.js"></script>-->
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <style>
+        label>input {
+            /* HIDE RADIO */
+            visibility: hidden;
+            /* Makes input not-clickable */
+            position: absolute;
+            /* Remove input from document flow */
+        }
+        
+        label>input+img {
+            /* IMAGE STYLES */
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        label>input:checked+img {
+            /* (RADIO CHECKED) IMAGE STYLES */
+            border: 2px solid #f00;
+        }
+    </style>
+    <script language="JavaScript">
+        <!-- This script and many more are available free online at -->
+        <!-- The JavaScript Source!! http://www.javascriptsource.com -->
+
+        <!-- Begin
+        // Insert number of questions
+        var numQues = 4;
+
+        // Insert number of choices in each question
+        var numChoi = 3;
+
+        // Insert number of questions displayed in answer area
+        var answers = new Array(4);
+
+        // Insert answers to questions
+        answers[0] = "Cascading Style Sheets";
+        answers[1] = "Dynamic HTML";
+        answers[2] = "Netscape";
+        answers[3] = "Common Gateway Interface";
+
+        // Do not change anything below here ...
+        function getScore(form) {
+            var score = 0;
+            var currElt;
+            var currSelection;
+            for (i = 0; i < numQues; i++) {
+                currElt = i * numChoi;
+                for (j = 0; j < numChoi; j++) {
+                    currSelection = form.elements[currElt + j];
+                    if (currSelection.checked) {
+                        if (currSelection.value == answers[i]) {
+                            score++;
+                            break;
+                        }
+                    }
+                }
+            }
+            score = Math.round(score / numQues * 100);
+            form.percentage.value = score + "%";
+            var correctAnswers = "";
+            for (i = 1; i <= numQues; i++) {
+                correctAnswers += i + ". " + answers[i - 1] + "\r\n";
+            }
+            form.solutions.value = correctAnswers;
+        }
+        //  End -->
+    </script>
+    <script>
+        //        $(document).ready(function() {
+        //            $().UItoTop({
+        //                easingType: 'easeOutQuart'
+        //            });
+        //            $('#stuck_container').tmStickUp({});
+        //        });
+    </script>
+    <!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+    <!--[if lt IE 10]>
+<link rel="stylesheet" media="screen" href="css/ie1.css">
+<![endif]-->
+</head>
+
+<body class="page1" id="top">
+    <!--==============================
+              header
+=================================-->
+    <header>
+        <!--==============================
+            Stuck menu
+=================================-->
+        <section id="stuck_container">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1>
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="Logo alt">
+                            </a>
+                        </h1>
+                        <div class="navigation ">
+                            <nav>
+                                <ul class="sf-menu">
+                                    <li><a href="index.html">About</a></li>
+                                    <li><a href="index-1.html">S menu 1</a></li>
+                                    <li><a href="index-2.html">S menu 2</a></li>
+                                    <li><a href="index-3.html">S menu 3</a></li>
+                                    <li><a href="index-4.html">S menu 4</a></li>
+                                </ul>
+                            </nav>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--=====================
+          Content
+======================-->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="ta__center">
+                        <h2>Questions</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear sep__1"></div>
+        <div class="container">
+            <div class="row">
+
+                <form name="quiz">
+                    <div class="questions_holder">
+                        <span> 1. What does CSS stand for?</span>
+                        <ul style="margin-top: 1pt">
+                            <li><input type="radio" name="q1" value="Colorful Style Symbols">Colorful Style Symbols</li>
+                            <li><input type="radio" name="q1" value="Cascading Style Sheets">Cascading Style Sheets</li>
+                            <li><input type="radio" name="q1" value="Computer Style Symbols">Computer Style Symbols</li>
+                        </ul>
+                    </div>
+
+                    <div class="questions_holder">
+                        <span>2. What does DHTML stand for?</span>
+                        <ul style="margin-top: 1pt">
+                            <li><input type="radio" name="q2" value="Dramatic HTML">Dramatic HTML</li>
+                            <li><input type="radio" name="q2" value="Design HTML">Design HTML</li>
+                            <li><input type="radio" name="q2" value="Dynamic HTML">Dynamic HTML</li>
+                        </ul>
+                    </div>
+                    <div class="questions_holder">
+                        <span>3. Who created Javascript?</span>
+                        <ul style="margin-top: 1pt">
+                            <li><input type="radio" name="q3" value="Microsoft">Microsoft</li>
+                            <li><input type="radio" name="q3" value="Netscape">Netscape</li>
+                            <li><input type="radio" name="q3" value="Sun Micro Systems">Sun Micro Systems</li>
+                        </ul>
+                    </div>
+                    <div class="questions_holder">
+                        <span>4. What does CGI stand for?</span>
+                        <ul style="margin-top: 1pt">
+                            <li><input type="radio" name="q4" value="Cascading Gate Interaction">Cascading Gate Interaction</li>
+                            <li><input type="radio" name="q4" value="Common GIF Interface">Common GIF Interface</li>
+                            <li><input type="radio" name="q4" value="Common Gateway Interface">Common Gateway Interface</li>
+                        </ul>
+                    </div>
+                    <div class="questions_holder">
+                        <span>5. click on image?</span>
+                        <ul style="margin-top: 1pt">
+                              <label>
+                            <input type="radio" name="fb" value="small" />
+                            <img src="http://placehold.it/20x20/35d/fff&text=f">
+                            </label>
+                        </ul>
+                        <ul style="margin-top: 1pt">
+                            <label>
+                        <input type="radio" name="fb" value="big"/>
+                        <img src="http://placehold.it/40x60/35d/fff&text=f">
+                      </label>
+                        </ul>
+                        <ul style="margin-top: 1pt">
+                            <label>
+                        <input id="fb3" type="radio" name="fb" value="med" />
+                        <img src="http://placehold.it/40x40/35d/fff&text=f">
+                      </label>
+                        </ul>
+                        <ul style="margin-top: 1pt">
+                        <label>
+                            <input id="fb4" type="radio" name="fb" value="long" />
+                            <img src="http://placehold.it/60x15/35d/fff&text=f">
+                          </label>
+                        </ul>
+                    </div>
+                    <input type="button" value="Get score" onClick="getScore(this.form)">
+                    <input type="reset" value="Clear answers">
+                    <p> Score = <strong><input class="bgclr" type="text" size="5" name="percentage" disabled></strong><br><br> Correct answers:<br>
+                        <textarea class="bgclr" name="solutions" wrap="virtual" rows="4" cols="30" disabled>
+</textarea>
+                </form>
+
+
+
+
+                <!-- Script Size:  3.82 KB -->
+            </div>
+        </div>
+    </section>
+    <!--==============================
+              footer
+=================================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="socials">
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-google-plus"></a>
+                        <a href="#" class="fa fa-youtube-play"></a>
+                    </div>
+                    <div class="copyright"><span class="brand">Web Design</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+                        <div>Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">ALL</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Inline Script-->
+</body>
+
+</html>
